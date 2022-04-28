@@ -1,4 +1,5 @@
 import base64
+import errno
 
 banner = """
 
@@ -34,15 +35,19 @@ def Getbase(string):
     return string[find_nth(string, "\"", 1)+1:find_nth(string, "\"", 2)]
 
 def decodeshitz(x):
-    base64_bytes = x.encode("ascii")
-    sample_string_bytes = base64.b64decode(base64_bytes)
-    sample_string = sample_string_bytes.decode('ascII')
-    return sample_string
+    try:
+        base64_bytes = x.encode("ascii")
+        sample_string_bytes = base64.b64decode(base64_bytes)
+        sample_string = sample_string_bytes.decode('ascII')
+        return sample_string
+    except Exception as e:
+        return "Couldnt decode Bytes to String"
+        print(e)
 
 def Two(x,n):
     clean = clean_string(x)
     k=1
-    for i in range(1,n+1):
+    for i in range(1,n):
         ss = x[find_nth(x, "\"", k)+1:find_nth(x,"==",i)+2]
         k+=2
         clean = clean.replace(ss, decodeshitz(ss))
@@ -73,11 +78,13 @@ for line in inputfile.readlines():
             pass
     elif index != -1:
         if line.count("Encoding.UTF8.GetString") > 1:
+            print("[*] Line : "+str(x))
             ch = Two(line, line.count("Encoding.UTF8.GetString"))
             if backslash.upper() == "Y"and HasSlash(ch) and ch.find("OpenSubKey"):
                  ch = ch.replace("\\","\\\\")
             output.write(ch)
         else:
+            print("[+] Line : "+str(x))
             GetBase64 = Getbase(clean_string(line))
             if GetBase64 != "":
                 decoded = decodeshitz(GetBase64)
