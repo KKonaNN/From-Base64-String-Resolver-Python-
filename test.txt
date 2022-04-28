@@ -1,0 +1,494 @@
+using System;
+using System.Collections.Generic;
+using System.Globalization;
+using System.IO;
+using System.Runtime.InteropServices;
+using System.Security.Principal;
+using System.Text;
+using Microsoft.Win32;
+using Microsoft.Win32.SafeHandles;
+
+namespace IDKShopSpoofer
+{
+	// Token: 0x02000002 RID: 2
+	internal class Helpers
+	{
+		// Token: 0x06000001 RID: 1 RVA: 0x00002050 File Offset: 0x00000250
+		public static bool ME1IIGsXvZaXIYgVLcB8()
+		{
+			return new WindowsPrincipal(WindowsIdentity.GetCurrent()).IsInRole(WindowsBuiltInRole.Administrator);
+		}
+
+		// Token: 0x06000002 RID: 2 RVA: 0x000020AC File Offset: 0x000002AC
+		public static string ZEcNrE13yAkDy9CoMIlQ(int size)
+		{
+			char[] array = new char[size];
+			for (int i = 0; i < size; i++)
+			{
+				array[i] = Encoding.UTF8.GetString(Convert.FromBase64String("QUJDREVGMDEyMzQ1Njc4OQ=="))[Helpers.U7T7HSvDQ6EeXvnYGPzN難読化BLAMMEDPROTECT難読化.Next(Encoding.UTF8.GetString(Convert.FromBase64String("QUJDREVGMDEyMzQ1Njc4OQ==")).Length)];
+			}
+			return new string(array);
+		}
+
+		// Token: 0x06000003 RID: 3 RVA: 0x0000211C File Offset: 0x0000031C
+		public static void YggTBZBMlsdZ6ioI1NRD()
+		{
+			Console.WriteLine(Encoding.UTF8.GetString(Convert.FromBase64String("")));
+			Console.ForegroundColor = ConsoleColor.Red;
+			Console.Write(Encoding.UTF8.GetString(Convert.FromBase64String("WypdIC0g")));
+			Console.ForegroundColor = ConsoleColor.Magenta;
+			Console.Write(Encoding.UTF8.GetString(Convert.FromBase64String("Q3VycmVudCBNQUMgQWRkcmVzczog")) + Helpers.fZYuf6Z8WsJCrlKiXSM1());
+			Console.WriteLine(Encoding.UTF8.GetString(Convert.FromBase64String("")));
+			string value = Encoding.UTF8.GetString(Convert.FromBase64String("MDA=")) + Helpers.ZEcNrE13yAkDy9CoMIlQ(10);
+			RegistryKey registryKey = Registry.LocalMachine.OpenSubKey(Encoding.UTF8.GetString(Convert.FromBase64String("U1lTVEVNXEN1cnJlbnRDb250cm9sU2V0XENvbnRyb2xcQ2xhc3NcezREMzZFOTcyLUUzMjUtMTFDRS1CRkMxLTA4MDAyQkUxMDMxOH1cMDAxMg==")), true);
+			registryKey.SetValue(Encoding.UTF8.GetString(Convert.FromBase64String("TmV0d29ya0FkZHJlc3M=")), value);
+			registryKey.Close();
+			Console.ForegroundColor = ConsoleColor.Red;
+			Console.Write(Encoding.UTF8.GetString(Convert.FromBase64String("WypdIC0g")));
+			Console.ForegroundColor = ConsoleColor.Magenta;
+			Console.Write(Encoding.UTF8.GetString(Convert.FromBase64String("TUFDIGFkZHJlc3MgY2hhbmdlZCB0bzog")) + Helpers.fZYuf6Z8WsJCrlKiXSM1());
+			Console.WriteLine(Encoding.UTF8.GetString(Convert.FromBase64String("")));
+		}
+
+		// Token: 0x06000004 RID: 4 RVA: 0x00002274 File Offset: 0x00000474
+		public static string fZYuf6Z8WsJCrlKiXSM1()
+		{
+			RegistryKey registryKey = Registry.LocalMachine.OpenSubKey(Encoding.UTF8.GetString(Convert.FromBase64String("U1lTVEVNXEN1cnJlbnRDb250cm9sU2V0XENvbnRyb2xcQ2xhc3NcezREMzZFOTcyLUUzMjUtMTFDRS1CRkMxLTA4MDAyQkUxMDMxOH1cMDAxMg==")), true);
+			string result = (string)registryKey.GetValue(Encoding.UTF8.GetString(Convert.FromBase64String("TmV0d29ya0FkZHJlc3M=")));
+			registryKey.Close();
+			return result;
+		}
+
+		// Token: 0x06000005 RID: 5 RVA: 0x000022C8 File Offset: 0x000004C8
+		public static void DOhGXU6QluWyrhaySme4()
+		{
+			Console.WriteLine(Encoding.UTF8.GetString(Convert.FromBase64String("")));
+			Console.ForegroundColor = ConsoleColor.Red;
+			Console.Write(Encoding.UTF8.GetString(Convert.FromBase64String("WypdIC0g")));
+			Console.ForegroundColor = ConsoleColor.Magenta;
+			Console.Write(Encoding.UTF8.GetString(Convert.FromBase64String("Q3VycmVudCBHVUlEOiA=")) + Helpers.A2qtia8l7FkJBpA1iS6V());
+			Console.WriteLine(Encoding.UTF8.GetString(Convert.FromBase64String("")));
+			string value = Guid.NewGuid().ToString();
+			RegistryKey.OpenBaseKey(RegistryHive.LocalMachine, RegistryView.Registry64).OpenSubKey(Encoding.UTF8.GetString(Convert.FromBase64String("U09GVFdBUkVcTWljcm9zb2Z0XENyeXB0b2dyYXBoeQ==")), true).SetValue(Encoding.UTF8.GetString(Convert.FromBase64String("TWFjaGluZUd1aWQ=")), value);
+			Console.ForegroundColor = ConsoleColor.Red;
+			Console.Write(Encoding.UTF8.GetString(Convert.FromBase64String("WypdIC0g")));
+			Console.ForegroundColor = ConsoleColor.Magenta;
+			Console.Write(Encoding.UTF8.GetString(Convert.FromBase64String("R1VJRCBjaGFuZ2VkIHRvOiA=")) + Helpers.A2qtia8l7FkJBpA1iS6V());
+			Console.WriteLine(Encoding.UTF8.GetString(Convert.FromBase64String("")));
+		}
+
+		// Token: 0x06000006 RID: 6 RVA: 0x00002414 File Offset: 0x00000614
+		public static string A2qtia8l7FkJBpA1iS6V()
+		{
+			string @string = Encoding.UTF8.GetString(Convert.FromBase64String("U09GVFdBUkVcTWljcm9zb2Z0XENyeXB0b2dyYXBoeQ=="));
+			string string2 = Encoding.UTF8.GetString(Convert.FromBase64String("TWFjaGluZUd1aWQ="));
+			string result;
+			using (RegistryKey registryKey = RegistryKey.OpenBaseKey(RegistryHive.LocalMachine, RegistryView.Registry64))
+			{
+				using (RegistryKey registryKey2 = registryKey.OpenSubKey(@string))
+				{
+					if (registryKey2 == null)
+					{
+						throw new KeyNotFoundException(string.Format(Encoding.UTF8.GetString(Convert.FromBase64String("S2V5IE5vdCBGb3VuZDogezB9")), @string));
+					}
+					object value = registryKey2.GetValue(string2);
+					if (value == null)
+					{
+						throw new IndexOutOfRangeException(string.Format(Encoding.UTF8.GetString(Convert.FromBase64String("SW5kZXggTm90IEZvdW5kOiB7MH0=")), string2));
+					}
+					result = value.ToString();
+				}
+			}
+			return result;
+		}
+
+		// Token: 0x06000007 RID: 7 RVA: 0x00002504 File Offset: 0x00000704
+		public static void AJn25LLJKL0aeh1aXoXn()
+		{
+			Console.WriteLine(Encoding.UTF8.GetString(Convert.FromBase64String("")));
+			Console.ForegroundColor = ConsoleColor.Red;
+			Console.Write(Encoding.UTF8.GetString(Convert.FromBase64String("WypdIC0g")));
+			Console.ForegroundColor = ConsoleColor.Magenta;
+			Console.Write(Encoding.UTF8.GetString(Convert.FromBase64String("Q3VycmVudCBQcm9kdWN0SUQ6IA==")) + Helpers.llifJMwCgJQzPS4rfYX7());
+			Console.WriteLine(Encoding.UTF8.GetString(Convert.FromBase64String("")));
+			string value = string.Concat(new string[]
+			{
+				Helpers.ZEcNrE13yAkDy9CoMIlQ(5),
+				Encoding.UTF8.GetString(Convert.FromBase64String("LQ==")),
+				Helpers.ZEcNrE13yAkDy9CoMIlQ(5),
+				Encoding.UTF8.GetString(Convert.FromBase64String("LQ==")),
+				Helpers.ZEcNrE13yAkDy9CoMIlQ(5),
+				Encoding.UTF8.GetString(Convert.FromBase64String("LQ==")),
+				Helpers.ZEcNrE13yAkDy9CoMIlQ(5)
+			});
+			RegistryKey registryKey = RegistryKey.OpenBaseKey(RegistryHive.LocalMachine, RegistryView.Registry64).OpenSubKey(Encoding.UTF8.GetString(Convert.FromBase64String("U09GVFdBUkVcTWljcm9zb2Z0XFdpbmRvd3MgTlRcQ3VycmVudFZlcnNpb24=")), true);
+			registryKey.SetValue(Encoding.UTF8.GetString(Convert.FromBase64String("UHJvZHVjdElE")), value);
+			registryKey.Close();
+			Console.ForegroundColor = ConsoleColor.Red;
+			Console.Write(Encoding.UTF8.GetString(Convert.FromBase64String("WypdIC0g")));
+			Console.ForegroundColor = ConsoleColor.Magenta;
+			Console.Write(Encoding.UTF8.GetString(Convert.FromBase64String("UHJvZHVjdElEIGNoYW5nZWQgdG86IA==")) + Helpers.llifJMwCgJQzPS4rfYX7());
+			Console.WriteLine(Encoding.UTF8.GetString(Convert.FromBase64String("")));
+		}
+
+		// Token: 0x06000008 RID: 8 RVA: 0x000026BC File Offset: 0x000008BC
+		public static string llifJMwCgJQzPS4rfYX7()
+		{
+			string @string = Encoding.UTF8.GetString(Convert.FromBase64String("U09GVFdBUkVcTWljcm9zb2Z0XFdpbmRvd3MgTlRcQ3VycmVudFZlcnNpb24="));
+			string string2 = Encoding.UTF8.GetString(Convert.FromBase64String("UHJvZHVjdElE"));
+			string result;
+			using (RegistryKey registryKey = RegistryKey.OpenBaseKey(RegistryHive.LocalMachine, RegistryView.Registry64))
+			{
+				using (RegistryKey registryKey2 = registryKey.OpenSubKey(@string))
+				{
+					if (registryKey2 == null)
+					{
+						throw new KeyNotFoundException(string.Format(Encoding.UTF8.GetString(Convert.FromBase64String("S2V5IE5vdCBGb3VuZDogezB9")), @string));
+					}
+					object value = registryKey2.GetValue(string2);
+					if (value == null)
+					{
+						throw new IndexOutOfRangeException(string.Format(Encoding.UTF8.GetString(Convert.FromBase64String("SW5kZXggTm90IEZvdW5kOiB7MH0=")), string2));
+					}
+					result = value.ToString();
+				}
+			}
+			return result;
+		}
+
+		// Token: 0x06000009 RID: 9 RVA: 0x000027AC File Offset: 0x000009AC
+		public static string ZYaVfK5UYZDtvj9O0IST(int size)
+		{
+			char[] array = new char[size];
+			for (int i = 0; i < size; i++)
+			{
+				array[i] = Encoding.UTF8.GetString(Convert.FromBase64String("YWJjZGVmMDEyMzQ1Njc4OQ=="))[Helpers.z36Xp4gWpeOCuMpmbOoO難読化BLAMMEDPROTECT難読化.Next(Encoding.UTF8.GetString(Convert.FromBase64String("YWJjZGVmMDEyMzQ1Njc4OQ==")).Length)];
+			}
+			return new string(array);
+		}
+
+		// Token: 0x0600000A RID: 10 RVA: 0x0000281C File Offset: 0x00000A1C
+		public static void OI2Bv1VVM9vz1pYWKWAz()
+		{
+			Console.WriteLine(Encoding.UTF8.GetString(Convert.FromBase64String("")));
+			Console.ForegroundColor = ConsoleColor.Red;
+			Console.Write(Encoding.UTF8.GetString(Convert.FromBase64String("WypdIC0g")));
+			Console.ForegroundColor = ConsoleColor.Magenta;
+			Console.Write(Encoding.UTF8.GetString(Convert.FromBase64String("Q3VycmVudCBpbnN0YWxsIHRpbWU6IA==")) + Helpers.hcdQGWE6jQ06FDTQw90N());
+			Console.WriteLine(Encoding.UTF8.GetString(Convert.FromBase64String("")));
+			string value = Helpers.ZYaVfK5UYZDtvj9O0IST(15);
+			RegistryKey registryKey = RegistryKey.OpenBaseKey(RegistryHive.LocalMachine, RegistryView.Registry64).OpenSubKey(Encoding.UTF8.GetString(Convert.FromBase64String("U09GVFdBUkVcTWljcm9zb2Z0XFdpbmRvd3MgTlRcQ3VycmVudFZlcnNpb24=")), true);
+			registryKey.SetValue(Encoding.UTF8.GetString(Convert.FromBase64String("SW5zdGFsbFRpbWU=")), value);
+			registryKey.Close();
+			Console.ForegroundColor = ConsoleColor.Red;
+			Console.Write(Encoding.UTF8.GetString(Convert.FromBase64String("WypdIC0g")));
+			Console.ForegroundColor = ConsoleColor.Magenta;
+			Console.Write(Encoding.UTF8.GetString(Convert.FromBase64String("SW5zdGFsbCB0aW1lIGNoYW5nZWQgdG86IA==")) + Helpers.hcdQGWE6jQ06FDTQw90N());
+			Console.WriteLine(Encoding.UTF8.GetString(Convert.FromBase64String("")));
+		}
+
+		// Token: 0x0600000B RID: 11 RVA: 0x00002964 File Offset: 0x00000B64
+		public static string hcdQGWE6jQ06FDTQw90N()
+		{
+			string @string = Encoding.UTF8.GetString(Convert.FromBase64String("U09GVFdBUkVcTWljcm9zb2Z0XFdpbmRvd3MgTlRcQ3VycmVudFZlcnNpb24="));
+			string string2 = Encoding.UTF8.GetString(Convert.FromBase64String("SW5zdGFsbFRpbWU="));
+			string result;
+			using (RegistryKey registryKey = RegistryKey.OpenBaseKey(RegistryHive.LocalMachine, RegistryView.Registry64))
+			{
+				using (RegistryKey registryKey2 = registryKey.OpenSubKey(@string))
+				{
+					if (registryKey2 == null)
+					{
+						throw new KeyNotFoundException(string.Format(Encoding.UTF8.GetString(Convert.FromBase64String("S2V5IE5vdCBGb3VuZDogezB9")), @string));
+					}
+					object value = registryKey2.GetValue(string2);
+					if (value == null)
+					{
+						throw new IndexOutOfRangeException(string.Format(Encoding.UTF8.GetString(Convert.FromBase64String("SW5kZXggTm90IEZvdW5kOiB7MH0=")), string2));
+					}
+					result = value.ToString();
+				}
+			}
+			return result;
+		}
+
+		// Token: 0x0600000C RID: 12 RVA: 0x00002A54 File Offset: 0x00000C54
+		public static void oKIo4D1FVMDEITcb5Lv9()
+		{
+			Console.WriteLine(Encoding.UTF8.GetString(Convert.FromBase64String("")));
+			Console.ForegroundColor = ConsoleColor.Red;
+			Console.Write(Encoding.UTF8.GetString(Convert.FromBase64String("WypdIC0g")));
+			Console.ForegroundColor = ConsoleColor.Magenta;
+			Console.Write(Encoding.UTF8.GetString(Convert.FromBase64String("Q3VycmVudCBpbnN0YWxsIGRhdGU6IA==")) + Helpers.WpbvJYuX6H0bwmK64omC());
+			Console.WriteLine(Encoding.UTF8.GetString(Convert.FromBase64String("")));
+			string value = Helpers.ZYaVfK5UYZDtvj9O0IST(8);
+			RegistryKey registryKey = RegistryKey.OpenBaseKey(RegistryHive.LocalMachine, RegistryView.Registry64).OpenSubKey(Encoding.UTF8.GetString(Convert.FromBase64String("U09GVFdBUkVcTWljcm9zb2Z0XFdpbmRvd3MgTlRcQ3VycmVudFZlcnNpb24=")), true);
+			registryKey.SetValue(Encoding.UTF8.GetString(Convert.FromBase64String("SW5zdGFsbERhdGU=")), value);
+			registryKey.Close();
+			Console.ForegroundColor = ConsoleColor.Red;
+			Console.Write(Encoding.UTF8.GetString(Convert.FromBase64String("WypdIC0g")));
+			Console.ForegroundColor = ConsoleColor.Magenta;
+			Console.Write(Encoding.UTF8.GetString(Convert.FromBase64String("TmV3IEluc3RhbGwgRGF0ZTog")) + Helpers.WpbvJYuX6H0bwmK64omC());
+		}
+
+		// Token: 0x0600000D RID: 13 RVA: 0x00002B9C File Offset: 0x00000D9C
+		public static string WpbvJYuX6H0bwmK64omC()
+		{
+			string @string = Encoding.UTF8.GetString(Convert.FromBase64String("U09GVFdBUkVcTWljcm9zb2Z0XFdpbmRvd3MgTlRcQ3VycmVudFZlcnNpb24="));
+			string string2 = Encoding.UTF8.GetString(Convert.FromBase64String("SW5zdGFsbERhdGU="));
+			string result;
+			using (RegistryKey registryKey = RegistryKey.OpenBaseKey(RegistryHive.LocalMachine, RegistryView.Registry64))
+			{
+				using (RegistryKey registryKey2 = registryKey.OpenSubKey(@string))
+				{
+					if (registryKey2 == null)
+					{
+						throw new KeyNotFoundException(string.Format(Encoding.UTF8.GetString(Convert.FromBase64String("S2V5IE5vdCBGb3VuZDogezB9")), @string));
+					}
+					object value = registryKey2.GetValue(string2);
+					if (value == null)
+					{
+						throw new IndexOutOfRangeException(string.Format(Encoding.UTF8.GetString(Convert.FromBase64String("SW5kZXggTm90IEZvdW5kOiB7MH0=")), string2));
+					}
+					result = value.ToString();
+				}
+			}
+			return result;
+		}
+
+		// Token: 0x0600000E RID: 14 RVA: 0x00002C8C File Offset: 0x00000E8C
+		public static void uzK6MVYl1hlkdqrz8MfF()
+		{
+			Console.WriteLine(Encoding.UTF8.GetString(Convert.FromBase64String("")));
+			Console.ForegroundColor = ConsoleColor.Red;
+			Console.Write(Encoding.UTF8.GetString(Convert.FromBase64String("WypdIC0g")));
+			Console.ForegroundColor = ConsoleColor.Magenta;
+			Console.Write(Encoding.UTF8.GetString(Convert.FromBase64String("Q3VycmVudCBId1Byb2ZpbGVHVUlEOiA=")) + Helpers.JE9Nm1IWJFHgZseXeFjn());
+			Console.WriteLine(Encoding.UTF8.GetString(Convert.FromBase64String("")));
+			string value = Encoding.UTF8.GetString(Convert.FromBase64String("ew==")) + Guid.NewGuid().ToString() + Encoding.UTF8.GetString(Convert.FromBase64String("fQ=="));
+			RegistryKey registryKey = RegistryKey.OpenBaseKey(RegistryHive.LocalMachine, RegistryView.Registry64).OpenSubKey(Encoding.UTF8.GetString(Convert.FromBase64String("U1lTVEVNXEN1cnJlbnRDb250cm9sU2V0XENvbnRyb2xcSURDb25maWdEQlxIYXJkd2FyZSBQcm9maWxlc1wwMDAx")), true);
+			registryKey.SetValue(Encoding.UTF8.GetString(Convert.FromBase64String("SHdQcm9maWxlR1VJRA==")), value);
+			registryKey.Close();
+			Console.ForegroundColor = ConsoleColor.Red;
+			Console.Write(Encoding.UTF8.GetString(Convert.FromBase64String("WypdIC0g")));
+			Console.ForegroundColor = ConsoleColor.Magenta;
+			Console.Write(Encoding.UTF8.GetString(Convert.FromBase64String("TmV3IEh3UHJvZmlsZUdVSUQ6IA==")) + Helpers.JE9Nm1IWJFHgZseXeFjn());
+			Console.WriteLine(Encoding.UTF8.GetString(Convert.FromBase64String("")));
+		}
+
+		// Token: 0x0600000F RID: 15 RVA: 0x00002E10 File Offset: 0x00001010
+		public static string JE9Nm1IWJFHgZseXeFjn()
+		{
+			string @string = Encoding.UTF8.GetString(Convert.FromBase64String("U1lTVEVNXEN1cnJlbnRDb250cm9sU2V0XENvbnRyb2xcSURDb25maWdEQlxIYXJkd2FyZSBQcm9maWxlc1wwMDAx"));
+			string string2 = Encoding.UTF8.GetString(Convert.FromBase64String("SHdQcm9maWxlR1VJRA=="));
+			string result;
+			using (RegistryKey registryKey = RegistryKey.OpenBaseKey(RegistryHive.LocalMachine, RegistryView.Registry64))
+			{
+				using (RegistryKey registryKey2 = registryKey.OpenSubKey(@string))
+				{
+					if (registryKey2 == null)
+					{
+						throw new KeyNotFoundException(string.Format(Encoding.UTF8.GetString(Convert.FromBase64String("S2V5IE5vdCBGb3VuZDogezB9")), @string));
+					}
+					object value = registryKey2.GetValue(string2);
+					if (value == null)
+					{
+						throw new IndexOutOfRangeException(string.Format(Encoding.UTF8.GetString(Convert.FromBase64String("SW5kZXggTm90IEZvdW5kOiB7MH0=")), string2));
+					}
+					result = value.ToString();
+				}
+			}
+			return result;
+		}
+
+		// Token: 0x06000010 RID: 16 RVA: 0x00002F00 File Offset: 0x00001100
+		public static bool AIvoWgxFuKySIgtqZwjk(string str, byte[] data, int offset)
+		{
+			for (int i = 0; i < str.Length; i++)
+			{
+				if (data[i + offset] != (byte)str[i])
+				{
+					return false;
+				}
+			}
+			return true;
+		}
+
+		// Token: 0x06000011 RID: 17 RVA: 0x00002F3C File Offset: 0x0000113C
+		public static void NCcWaEUlM3V22sFAIlrF()
+		{
+			string text = Helpers.ZEcNrE13yAkDy9CoMIlQ(8);
+			uint num = uint.Parse(text, NumberStyles.HexNumber);
+			Console.ForegroundColor = ConsoleColor.Red;
+			Console.WriteLine(Encoding.UTF8.GetString(Convert.FromBase64String("")));
+			Console.Write(Encoding.UTF8.GetString(Convert.FromBase64String("WypdIC0g")));
+			Console.ForegroundColor = ConsoleColor.Magenta;
+			Console.Write(Encoding.UTF8.GetString(Convert.FromBase64String("SEREIHNlcmlhbCBjaGFuZ2luZyB0bzog")) + text + Encoding.UTF8.GetString(Convert.FromBase64String("IC0g")) + num.ToString());
+			Console.WriteLine(Encoding.UTF8.GetString(Convert.FromBase64String("")));
+		}
+
+		// Token: 0x06000012 RID: 18 RVA: 0x00002FF4 File Offset: 0x000011F4
+		public static void yGp7jzoyhVy9x68NR()
+		{
+			Console.WriteLine(Encoding.UTF8.GetString(Convert.FromBase64String("")));
+			Console.ForegroundColor = ConsoleColor.Red;
+			Console.Write(Encoding.UTF8.GetString(Convert.FromBase64String("WypdIC0g")));
+			Console.ForegroundColor = ConsoleColor.Magenta;
+			Console.Write(Encoding.UTF8.GetString(Convert.FromBase64String("Q3VycmVudCBQQyBuYW1lOiA=")) + Helpers.VMs1p5pQatheFeQKaeQl());
+			Console.WriteLine(Encoding.UTF8.GetString(Convert.FromBase64String("")));
+			RegistryKey registryKey = RegistryKey.OpenBaseKey(RegistryHive.LocalMachine, RegistryView.Registry64).OpenSubKey(Encoding.UTF8.GetString(Convert.FromBase64String("U1lTVEVNXEN1cnJlbnRDb250cm9sU2V0XENvbnRyb2xcQ29tcHV0ZXJOYW1lXEFjdGl2ZUNvbXB1dGVyTmFtZQ==")), true);
+			registryKey.SetValue(Encoding.UTF8.GetString(Convert.FromBase64String("Q29tcHV0ZXJOYW1l")), Encoding.UTF8.GetString(Convert.FromBase64String("REVTS1RPUC0=")) + Helpers.ZEcNrE13yAkDy9CoMIlQ(15));
+			registryKey.Close();
+			Console.ForegroundColor = ConsoleColor.Red;
+			Console.Write(Encoding.UTF8.GetString(Convert.FromBase64String("WypdIC0g")));
+			Console.ForegroundColor = ConsoleColor.Magenta;
+			Console.Write(Encoding.UTF8.GetString(Convert.FromBase64String("UEMgbmFtZSBzcG9vZmVkIHRvOiA=")) + Helpers.VMs1p5pQatheFeQKaeQl());
+			Console.WriteLine(Encoding.UTF8.GetString(Convert.FromBase64String("")));
+		}
+
+		// Token: 0x06000013 RID: 19 RVA: 0x00003154 File Offset: 0x00001354
+		public static string VMs1p5pQatheFeQKaeQl()
+		{
+			string @string = Encoding.UTF8.GetString(Convert.FromBase64String("U1lTVEVNXEN1cnJlbnRDb250cm9sU2V0XENvbnRyb2xcQ29tcHV0ZXJOYW1lXEFjdGl2ZUNvbXB1dGVyTmFtZQ=="));
+			string string2 = Encoding.UTF8.GetString(Convert.FromBase64String("Q29tcHV0ZXJOYW1l"));
+			string result;
+			using (RegistryKey registryKey = RegistryKey.OpenBaseKey(RegistryHive.LocalMachine, RegistryView.Registry64))
+			{
+				using (RegistryKey registryKey2 = registryKey.OpenSubKey(@string))
+				{
+					if (registryKey2 == null)
+					{
+						throw new KeyNotFoundException(string.Format(Encoding.UTF8.GetString(Convert.FromBase64String("S2V5IE5vdCBGb3VuZDogezB9")), @string));
+					}
+					object value = registryKey2.GetValue(string2);
+					if (value == null)
+					{
+						throw new IndexOutOfRangeException(string.Format(Encoding.UTF8.GetString(Convert.FromBase64String("SW5kZXggTm90IEZvdW5kOiB7MH0=")), string2));
+					}
+					result = value.ToString();
+				}
+			}
+			return result;
+		}
+
+		// Token: 0x04000001 RID: 1
+		public static Random U7T7HSvDQ6EeXvnYGPzN難読化BLAMMEDPROTECT難読化 = new Random();
+
+		// Token: 0x04000002 RID: 2
+		public const string S8vFis0RmWJn9lLLbwd8難読化BLAMMEDPROTECT難読化 = "ABCDEF0123456789";
+
+		// Token: 0x04000003 RID: 3
+		public static Random z36Xp4gWpeOCuMpmbOoO難読化BLAMMEDPROTECT難読化 = new Random();
+
+		// Token: 0x04000004 RID: 4
+		public const string sdRtWREcjcnJb1OpC7QO難読化BLAMMEDPROTECT難読化 = "abcdef0123456789";
+
+		// Token: 0x02000003 RID: 3
+		private class Disk : IDisposable
+		{
+			// Token: 0x06000016 RID: 22 RVA: 0x00003244 File Offset: 0x00001444
+			public Disk(char volume)
+			{
+				IntPtr preexistingHandle = Helpers.Disk.CreateFile(string.Format("\\\\.\\{0}:", volume), FileAccess.ReadWrite, FileShare.ReadWrite, IntPtr.Zero, FileMode.Open, 0, IntPtr.Zero);
+				this.handle = new SafeFileHandle(preexistingHandle, true);
+				if (this.handle.IsInvalid)
+				{
+					Marshal.ThrowExceptionForHR(Marshal.GetHRForLastWin32Error());
+				}
+			}
+
+			// Token: 0x06000017 RID: 23 RVA: 0x000032A0 File Offset: 0x000014A0
+			public void ReadSector(uint sector, byte[] buffer)
+			{
+				if (buffer == null)
+				{
+					throw new ArgumentNullException("buffer");
+				}
+				if (Helpers.Disk.SetFilePointer(this.handle, sector, IntPtr.Zero, Helpers.Disk.EMoveMethod.Begin) == 4294967295U)
+				{
+					Marshal.ThrowExceptionForHR(Marshal.GetHRForLastWin32Error());
+				}
+				uint num;
+				if (!Helpers.Disk.ReadFile(this.handle, buffer, buffer.Length, out num, IntPtr.Zero))
+				{
+					Marshal.ThrowExceptionForHR(Marshal.GetHRForLastWin32Error());
+				}
+				if ((ulong)num != (ulong)((long)buffer.Length))
+				{
+					throw new IOException();
+				}
+			}
+
+			// Token: 0x06000018 RID: 24 RVA: 0x0000330C File Offset: 0x0000150C
+			public void WriteSector(uint sector, byte[] buffer)
+			{
+				if (buffer == null)
+				{
+					throw new ArgumentNullException("buffer");
+				}
+				if (Helpers.Disk.SetFilePointer(this.handle, sector, IntPtr.Zero, Helpers.Disk.EMoveMethod.Begin) == 4294967295U)
+				{
+					Marshal.ThrowExceptionForHR(Marshal.GetHRForLastWin32Error());
+				}
+				uint num;
+				if (!Helpers.Disk.WriteFile(this.handle, buffer, buffer.Length, out num, IntPtr.Zero))
+				{
+					Marshal.ThrowExceptionForHR(Marshal.GetHRForLastWin32Error());
+				}
+				if ((ulong)num != (ulong)((long)buffer.Length))
+				{
+					throw new IOException();
+				}
+			}
+
+			// Token: 0x06000019 RID: 25 RVA: 0x00002084 File Offset: 0x00000284
+			public void Dispose()
+			{
+				this.Dispose(true);
+				GC.SuppressFinalize(this);
+			}
+
+			// Token: 0x0600001A RID: 26 RVA: 0x00002093 File Offset: 0x00000293
+			protected virtual void Dispose(bool disposing)
+			{
+				if (disposing && this.handle != null)
+				{
+					this.handle.Dispose();
+				}
+			}
+
+			// Token: 0x0600001B RID: 27
+			[DllImport("Kernel32.dll", CharSet = CharSet.Auto, SetLastError = true)]
+			public static extern IntPtr CreateFile(string fileName, [MarshalAs(UnmanagedType.U4)] FileAccess fileAccess, [MarshalAs(UnmanagedType.U4)] FileShare fileShare, IntPtr securityAttributes, [MarshalAs(UnmanagedType.U4)] FileMode creationDisposition, int flags, IntPtr template);
+
+			// Token: 0x0600001C RID: 28
+			[DllImport("Kernel32.dll", CharSet = CharSet.Auto, SetLastError = true)]
+			private static extern uint SetFilePointer([In] SafeFileHandle hFile, [In] uint lDistanceToMove, [In] IntPtr lpDistanceToMoveHigh, [In] Helpers.Disk.EMoveMethod dwMoveMethod);
+
+			// Token: 0x0600001D RID: 29
+			[DllImport("kernel32.dll", SetLastError = true)]
+			private static extern bool ReadFile(SafeFileHandle hFile, [Out] byte[] lpBuffer, int nNumberOfBytesToRead, out uint lpNumberOfBytesRead, IntPtr lpOverlapped);
+
+			// Token: 0x0600001E RID: 30
+			[DllImport("kernel32.dll")]
+			private static extern bool WriteFile(SafeFileHandle hFile, [In] byte[] lpBuffer, int nNumberOfBytesToWrite, out uint lpNumberOfBytesWritten, [In] IntPtr lpOverlapped);
+
+			// Token: 0x04000005 RID: 5
+			private SafeFileHandle handle;
+
+			// Token: 0x04000006 RID: 6
+			private const uint INVALID_SET_FILE_POINTER = 4294967295U;
+
+			// Token: 0x02000004 RID: 4
+			private enum EMoveMethod : uint
+			{
+				// Token: 0x04000008 RID: 8
+				Begin,
+				// Token: 0x04000009 RID: 9
+				Current,
+				// Token: 0x0400000A RID: 10
+				End
+			}
+		}
+	}
+}
