@@ -1,5 +1,4 @@
 import base64
-import errno
 
 banner = """
 
@@ -42,20 +41,15 @@ def decodeshitz(x):
         return sample_string
     except Exception as e:
         return "Couldnt decode Bytes to String"
-        print(e)
 
-def Two(x,n):
+def TwoOrMore(x,n=2):
     clean = clean_string(x)
     k=1
     for i in range(1,n):
-        ss = x[find_nth(x, "\"", k)+1:find_nth(x,"==",i)+2]
+        ss = x[find_nth(x, "\"", k)+1:find_nth(x,"\"",i+1)]
         k+=2
         clean = clean.replace(ss, decodeshitz(ss))
     return (clean)
-
-
-
-
 
 def HasSlash(x):
     for i in range(len(x)):
@@ -79,7 +73,7 @@ for line in inputfile.readlines():
     elif index != -1:
         if line.count("Encoding.UTF8.GetString") > 1:
             print("[*] Line : "+str(x))
-            ch = Two(line, line.count("Encoding.UTF8.GetString"))
+            ch = TwoOrMore(line, line.count("Encoding.UTF8.GetString"))
             if backslash.upper() == "Y"and HasSlash(ch) and ch.find("OpenSubKey"):
                  ch = ch.replace("\\","\\\\")
             output.write(ch)
@@ -101,7 +95,6 @@ for line in inputfile.readlines():
                 ch = ch + ";"      
     else:
         output.write(line)
-    
     
 
 print(colors.HEADER +"[+] Reading file...")
