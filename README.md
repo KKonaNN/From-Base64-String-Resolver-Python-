@@ -1,5 +1,5 @@
 # From-Base64-String-Resolver-Python-
-This is fast Base64 String resolver for cs files that i made so i dont convert them one by one -_-<br>
+This is fast Base64 String resolver for cs files that i made so i dont convert them one by one 😂<br>
 Dont hesitate to add ur magical touch !
 EXEMPLE:
 
